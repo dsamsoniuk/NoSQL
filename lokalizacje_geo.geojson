@@ -17,15 +17,14 @@
         "properties": {"prop0": "value0"}
         },
         
-        {
-  "loc": {
+        {"type": "Feature",
+  "geometry": {
     "coordinates": [
       17.15,
       -22.566667
     ],
     "type": "Point"
-  },
-  "_id": "namibia"
+  }
 }
         
         
