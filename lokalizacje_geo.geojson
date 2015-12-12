@@ -18,7 +18,22 @@
     "building": "469"
 },
         
-        
+ {
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "zipcode": "11225",
+    "street": "Flatbush Avenue",
+    "coord": [
+      -73.961704,
+      40.662942
+    ],
+    "building": "469"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+},       
         
         
         
