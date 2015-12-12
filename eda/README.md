@@ -11,13 +11,13 @@
 
 > time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c reddit
 
-![screen1](img/s1.png?raw=true)
-![screen1](img/s2.png?raw=true)
+![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s1_g.png?raw=true)
+![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s2_g.png?raw=true)
 
 
 ## Wnioski
-||MongoDB|Postgresql|
-|-|-|-|
+|- |MongoDB|Postgresql|
+|-|---------|----|
 |Czas trwania importu danych|108m 21s| brak|
 |Czas zliczenia wierszy| 0s| brak|
 
