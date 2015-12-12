@@ -90,7 +90,7 @@
         
       { "type": "Feature",
          "geometry": {
-           "type": "Polygon",
+           "type": "LineString",
     "coordinates": [
       -74.0259567,
       40.6353674
