@@ -1,24 +1,7 @@
 { "type": "FeatureCollection",
     "features": [
         
-        
-        
-      { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
-        "properties": {"prop0": "value0"}
-        },
-        
-        
-{
-  "type": "Feature",
-  "geometry": { "type": "Point", "coordinates": [      -73.961704,      40.662942   ]  },
-  "properties": {    "prop0": "value0"
-  }
-  ,
-    "building": "469"
-},
-        
-{
+        {
   "type": "Feature",
   "geometry": {
     "coordinates": [
@@ -33,7 +16,72 @@
   "properties": {
     "prop0": "value0"
   }
-},  
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "coordinates": [
+      -73.8786113,
+      40.8502883
+    ],
+    "zipcode": "10460",
+    "type": "Point",
+    "street": "Southern Boulevard",
+    "building": "2300"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "coordinates": [
+      -73.97822040000001,
+      40.6435254
+    ],
+    "zipcode": "11218",
+    "type": "Point",
+    "street": "Church Avenue",
+    "building": "203"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "coordinates": [
+      -73.7032601,
+      40.7386417
+    ],
+    "zipcode": "11004",
+    "type": "Point",
+    "street": "Hillside Avenue",
+    "building": "265-15"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "coordinates": [
+      -74.0259567,
+      40.6353674
+    ],
+    "zipcode": "11209",
+    "type": "Point",
+    "street": "3 Avenue",
+    "building": "6909"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+},
+
         
         
         
