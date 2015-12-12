@@ -18,20 +18,22 @@
     "building": "469"
 },
         
- {
+{
   "type": "Feature",
   "geometry": {
-    "type": "Point",
     "coordinates": [
-      -73.961704,
-      40.662942
+      -73.9068506,
+      40.6199034
     ],
-    "building": "469"
+    "zipcode": "11234",
+    "type": "Point",
+    "street": "Avenue U",
+    "building": "7114"
   },
   "properties": {
     "prop0": "value0"
   }
-},       
+},  
         
         
         
