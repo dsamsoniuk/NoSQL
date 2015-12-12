@@ -18,7 +18,7 @@
         },
         
         {"type": "Feature",
-  "geometry": {
+  "loc": {
     "coordinates": [
       17.15,
       -22.566667
