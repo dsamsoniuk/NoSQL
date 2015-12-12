@@ -11,7 +11,18 @@
         
         
         
-
+{
+  "type": "Feature",
+  "geometry": {
+    "coord": [
+      -73.961704,
+      40.662942
+    ]
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+}
         
         
         
