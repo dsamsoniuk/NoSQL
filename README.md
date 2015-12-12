@@ -3,7 +3,7 @@ laboratoria, nosql
 
 Zaliczenie :
 
-* [EDA](https://github.com/dsamsoniuk/NoSQL)
+* [EDA](https://github.com/dsamsoniuk/NoSQL/tree/master/eda)
 
 | | |
 |---|---|
