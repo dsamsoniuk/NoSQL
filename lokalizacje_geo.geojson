@@ -2,31 +2,87 @@
     "features": [
         
         
-      { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
-        "properties": {"prop0": "value0"}
-        },
-        
-      { "type": "Feature",
-        "geometry": { "coordinates": [104.0, 0.5]},
-        "type": "Point",
-        "properties": {"prop0": "value0"}
-        },     
-        
-      { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [110.0, 0.5]},
-        "properties": {"prop0": "value0"}
-        },
-        
-        {"type": "Feature",
-  "loc": {
-    "coordinates": [
-      17.15,
-      -22.566667
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "zipcode": "11225",
+    "street": "Flatbush Avenue",
+    "coord": [
+      -73.961704,
+      40.662942
     ],
-    "type": "Point"
+    "building": "469"
+  },
+  "properties": {
+    "prop0": "value0"
   }
 }
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "zipcode": "11234",
+    "street": "Avenue U",
+    "coord": [
+      -73.9068506,
+      40.6199034
+    ],
+    "building": "7114"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+}
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "zipcode": "10460",
+    "street": "Southern Boulevard",
+    "coord": [
+      -73.8786113,
+      40.8502883
+    ],
+    "building": "2300"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+}
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "zipcode": "11218",
+    "street": "Church Avenue",
+    "coord": [
+      -73.97822040000001,
+      40.6435254
+    ],
+    "building": "203"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+}
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "zipcode": "11004",
+    "street": "Hillside Avenue",
+    "coord": [
+      -73.7032601,
+      40.7386417
+    ],
+    "building": "265-15"
+  },
+  "properties": {
+    "prop0": "value0"
+  }
+}
+
         
         
          
