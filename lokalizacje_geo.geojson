@@ -17,7 +17,6 @@
         "properties": {"prop0": "value0"}
         },
         
-        
         {
   "loc": {
     "coordinates": [
@@ -28,47 +27,6 @@
   },
   "_id": "namibia"
 }
-{
-  "loc": {
-    "coordinates": [
-      10.898333,
-      48.371667
-    ],
-    "type": "Point"
-  },
-  "_id": "augsburg"
-}
-{
-  "loc": {
-    "coordinates": [
-      -52.95,
-      -10.65
-    ],
-    "type": "Point"
-  },
-  "_id": "brasilia"
-}
-{
-  "loc": {
-    "coordinates": [
-      -122.270833,
-      37.804444
-    ],
-    "type": "Point"
-  },
-  "_id": "oakland"
-}
-{
-  "loc": {
-    "coordinates": [
-      135,
-      -25
-    ],
-    "type": "Point"
-  },
-  "_id": "australia"
-}
-
         
         
          
