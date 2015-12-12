@@ -85,16 +85,18 @@
         
         
         
-        
-        
-        
       { "type": "Feature",
          "geometry": {
-           "type": "LineString",
-    "coordinates": [
+           "type": "Polygon",
+           "coordinates": [
+             [
+      -74.0259567,
+      40.6353674
+    ],[
       -74.0259567,
       40.6353674
     ]
+             ]
          },
          "properties": {
            "prop0": "value0",
