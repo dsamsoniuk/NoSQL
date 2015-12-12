@@ -16,8 +16,8 @@
 
 
 ## Wnioski
-|- |MongoDB|Postgresql|
-|-|:---------:|:----:|
+| ---- | MongoDB | Postgresql |
+| ---- |:---------:|:----:|
 |Czas trwania importu danych|108m 21s| brak|
 |Czas zliczenia wierszy| 0s| brak|
 
