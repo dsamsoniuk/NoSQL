@@ -3,11 +3,13 @@
         
         
       { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]}
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
+        "properties": {"prop0": "value0"}
         },
         
       { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [104.0, 0.5]},
+        "geometry": { "coordinates": [104.0, 0.5]},
+        "type": "Point",
         "properties": {"prop0": "value0"}
         },     
         
