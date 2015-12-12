@@ -9,8 +9,6 @@
         },
         
         
-        
-        
 {
   "type": "Feature",
   "geometry": {
@@ -22,7 +20,7 @@
   "properties": {
     "prop0": "value0"
   }
-}
+},
         
         
         
