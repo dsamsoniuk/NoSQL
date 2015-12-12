@@ -1,7 +1,6 @@
 
 # EDA
 
-<<<<<<< HEAD
 ## Zad 2a
 ### Import danych MongoDB
 #### Pobrany plik:
@@ -12,8 +11,8 @@
 
 > time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c reddit
 
-![screen1](img/s1.png)
-![screen1](img/s2.png)
+![screen1](img/s1.png?raw=true)
+![screen1](img/s2.png?raw=true)
 
 
 ## Wnioski
