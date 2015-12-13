@@ -11,9 +11,19 @@
 
 > time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c reddit
 
-![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s1_g.png?raw=true)
-![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s2_g.png?raw=true)
+#### Czas
 
+>  real 108m21.75s </br>
+>  user 163m32.455s </br>
+>  sys 6m6.874s
+
+
+#### Historia procesora
+
+![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s2_g.png?raw=true)
+#### Waga zaimportowanej bazy danych
+
+> 29.5 GB
 
 ## Wnioski
 | ---- | MongoDB | Postgresql |
@@ -35,21 +45,62 @@
 ### Przykładowe polecenia (MongoDB)
 #### Polecenie
 
-> db.reddit.find({author:'jaggazz'}, {author : 1, body : 1}).limit(1)
+> db.reddit.find({author:'jaggazz'}, {_id:0, author : 1, body : 1,id:1, name:1 }).limit(1)
 
 #### Wynik
 
-> { "\_id" : ObjectId("566ac57f71a205f9b2542d9b"), "body" : "I don't know how to describe it.  Gently pinched two spots weiner length apart and just twisted them about 3or 4 times.", "author" : "jaggazz" }
+{
+  "id": "cnas905",
+  "author": "jaggazz",
+  "body": "I don't know how to describe it.  Gently pinched two spots weiner length apart and just twisted them about 3or 4 times.",
+  "name": "t1_cnas905"
+}
+
+
+
+#### Polecenie
+
+> db.reddit.find({"score" :2, "author" : "BSMason"},{ "\_id":0}).skip(2).limit(1)
+
+#### Wynik
+
+{
+  "created_utc": "1420071568",
+  "downs": 0,
+  "body": "I have been challenged in this discussion greatly.  I would say that as a  PB, and given our congregational vows at every baptism, I think the whole church should be involved in sharing God's gifts on behalf of the covenant children.  And between you and I (haha), there are very real difficulties for some mothers that aren't a result of laziness, unwillingness, or even lack of understanding of the subjects.  Thank you for the discussion.",
+  "distinguished": null,
+  "id": "cnasrhy",
+  "author_flair_css_class": "",
+  "author_flair_text": "RCUS, yo",
+  "gilded": 0,
+  "controversiality": 0,
+  "edited": false,
+  "subreddit_id": "t5_2riuy",
+  "subreddit": "Reformed",
+  "parent_id": "t1_cnasltc",
+  "ups": 2,
+  "retrieved_on": 1425124043,
+  "name": "t1_cnasrhy",
+  "link_id": "t3_2qtzje",
+  "score_hidden": false,
+  "score": 2,
+  "author": "BSMason",
+  "archived": false
+}
+
+
+
+
 
 
 ### Przykładowe polecenia (Postgresql)
 
-> cos tam
+> chwilowo brak
 
-## Geojson
-=======
-| | |
-|---|---|
-|System|linux 14.04 x64|
+# Geojson
 
->>>>>>> 309ea7b2a194358c93b71ef51700c6f46647a3c2
+### Mapa punktowa
+
+Mapa punktowa która zawiera 5 budynków restauracji:
+
+![mapa 1](https://github.com/dsamsoniuk/NoSQL/blob/master/lokalizacje_geo.geojson)
