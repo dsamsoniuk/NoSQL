@@ -45,25 +45,30 @@
 ### Przykładowe polecenia (MongoDB)
 #### Polecenie
 
-> db.reddit.find({author:'jaggazz'}, {_id:0, author : 1, body : 1,id:1, name:1 }).limit(1)
-
+```js
+ db.reddit.find({author:'jaggazz'}, {_id:0, author : 1, body : 1,id:1, name:1 }).limit(1)
+```
 #### Wynik
 
+```js
 {
   "id": "cnas905",
   "author": "jaggazz",
   "body": "I don't know how to describe it.  Gently pinched two spots weiner length apart and just twisted them about 3or 4 times.",
   "name": "t1_cnas905"
 }
-
+```
 
 
 #### Polecenie
 
-> db.reddit.find({"score" :2, "author" : "BSMason"},{ "\_id":0}).skip(2).limit(1)
+```js
+db.reddit.find({"score" :2, "author" : "BSMason"},{ "_id":0}).skip(2).limit(1)
+```
 
 #### Wynik
 
+```js
 {
   "created_utc": "1420071568",
   "downs": 0,
@@ -87,7 +92,7 @@
   "author": "BSMason",
   "archived": false
 }
-
+```
 
 
 

@@ -4,6 +4,7 @@ laboratoria, nosql
 [Zaliczenie](https://github.com/dsamsoniuk/NoSQL/tree/master/eda) :
 
 * EDA
+* Geojson
 
 | | |
 |---|---|
