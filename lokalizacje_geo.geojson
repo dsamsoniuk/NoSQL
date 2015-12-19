@@ -1,5 +1,6 @@
 {"type":"FeatureCollection","features":[
     {"type":"Feature","id":"AGO","properties":{"name":"Angola"},"geometry":{"type":"Point","coordinates":[16.326528,-5.87747]}},
+    
     {
   "type": "Feature",
   "geometry": {
@@ -8,7 +9,6 @@
     "type": "Point",
     "street": "3 Avenue",
     "building": "6909"
-  },
-  "properties": { "prop0": "value0"}
+  }
 }
 ]}
