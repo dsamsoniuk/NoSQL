@@ -1,16 +1,70 @@
 {"type":"FeatureCollection","features":[
-    {"type":"Feature","id":"AGO","properties":{"name":"Angola"},"geometry":{"type":"Point","coordinates":[16.326528,-5.87747]}},
-    
-    {
+{
   "type": "Feature",
   "geometry": {
-    "coordinates": [-74.0259567,40.6353674 ],
-    "zipcode": "11209",
-    "type": "Point",
-    "street": "3 Avenue",
-    "building": "6909"
-  },
-    "properties": {
-    "prop0": "value0"}
+    "name": "Avenue U",
+    "coordinates": [
+      -73.9068506,
+      40.6199034
+    ],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "name": "Southern Boulevard",
+    "coordinates": [
+      -73.8786113,
+      40.8502883
+    ],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "name": "Church Avenue",
+    "coordinates": [
+      -73.97822040000001,
+      40.6435254
+    ],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "name": "Hillside Avenue",
+    "coordinates": [
+      -73.7032601,
+      40.7386417
+    ],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "name": "3 Avenue",
+    "coordinates": [
+      -74.0259567,
+      40.6353674
+    ],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "name": "Amsterdam Avenue",
+    "coordinates": [
+      -73.976112,
+      40.786714
+    ],
+    "type": "Point"
+  }
 }
+
+
 ]}
