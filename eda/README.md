@@ -33,7 +33,7 @@ time  mongoimport --host 127.0.0.1 -d test -c wiki --type tsv --headerline --fil
 #### Waga zaimportowanej bazy danych (różne formaty)
 
 ||tsv|csv|json|sql
-| - | - | - | - | - |
+| --- | :--: | :--: | :--: | :--: |
 |Waga bazy w różnych formatach|2.77GB|2.8GB|10.4GB|14GB|
 
 
@@ -130,7 +130,7 @@ db.wiki.find({},{_id:0, page_id:1,page_title:1, user_id:1 }).skip(49).limit(3)
 #### Polecenie 1. Wyswielt 3 rekordy od 49
 
 ```js
-select data->>\'page_id\' as page_id ,data->>\'page_title\' as page_title from import.wikipedia offset 49 limit 3
+select data->>'page_id' as page_id ,data->>'page_title' as page_title from import.wikipedia offset 49 limit 3
 
 page_id  |     page_title     
 ----------+--------------------
@@ -143,11 +143,11 @@ page_id  |     page_title
 #### Polecenie 2. Wyswielt rekord wedlug page_id= 26219828
 
 ```js
-select data->>\'page_id\' as page_id ,data->>\'page_title\' as page_title,data->>\'timestamp\' as time from import.wikipedia where data->>\'page_id\'=\'26219828\' limit 1
+select data->>'page_id' as page_id ,data->>'page_title' as page_title,data->>'timestamp' as time from import.wikipedia where data->>'page_id'='26219828' limit 1
 
 page_id  |    page_title     |               time               
 ----------+-------------------+----------------------------------
-26219828 | Carlo\'s_Bake_Shop | {\"$numberLong\":\"20110722000030\"}
+26219828 | Carlos_Bake_Shop | {"$numberLong":"20110722000030"}
 ```
 
 
@@ -155,13 +155,8 @@ page_id  |    page_title     |               time
 ```js
 select * from import.wikipedia limit 1
 
- {\"_id\":{\"$oid\":\"566eecdc71b9e788d9150668\"},\"timestamp\":{\"$numberLong\":\"20110722000002\"},\"page_id\":29543332,\"page_title\":0.0,\"page_namespace\":0,\"rev_id\":419784624,\"user_id\":0,\"rating_key\":3,\"rating_value\":5}
+ {"_id":{"$oid":"566eecdc71b9e788d9150668"},"timestamp":{"$numberLong":"20110722000002"},"page_id":29543332,"page_title":0.0,"page_namespace":0,"rev_id":419784624,"user_id":0,"rating_key":3,"rating_value":5}
 ```
-
-
-
-
-
 
 
 
@@ -169,8 +164,20 @@ select * from import.wikipedia limit 1
 
 # Geojson
 
+
+#### Zmien nazwe street na name, rownież musialem to zrobic z reszta zmiennych
+
+```js
+db.restauracje.update({},{$rename:{"borough":"name"}},false,true)
+```
+
+#### Wyswietl 6 restauracji
+
+```js
+db.restauracje.find({},{_id:0,type:1,"geometry.coordinates":1,"geometry.type":1,"geometry.name":1}).limit(6)
+```
+
 ### Mapa punktowa
+Mapa punktowa która zawiera 6 budynków restauracji:
 
-Mapa punktowa która zawiera 5 budynków restauracji:
-
-![mapa 1](https://github.com/dsamsoniuk/NoSQL/blob/master/lokalizacje_geo.geojson)
+![mapa 1](https://github.com/dsamsoniuk/NoSQL/blob/master/mapa_punktowa.geojson)
