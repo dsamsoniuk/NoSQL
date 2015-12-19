@@ -1,8 +1,8 @@
 {"type":"FeatureCollection","features":[
 {
+  "name": "Brooklyn",
   "type": "Feature",
   "geometry": {
-    "name": "Avenue U",
     "coordinates": [
       -73.9068506,
       40.6199034
@@ -11,9 +11,9 @@
   }
 },
 {
+  "name": "Bronx",
   "type": "Feature",
   "geometry": {
-    "name": "Southern Boulevard",
     "coordinates": [
       -73.8786113,
       40.8502883
@@ -22,9 +22,9 @@
   }
 },
 {
+  "name": "Brooklyn",
   "type": "Feature",
   "geometry": {
-    "name": "Church Avenue",
     "coordinates": [
       -73.97822040000001,
       40.6435254
@@ -33,9 +33,9 @@
   }
 },
 {
+  "name": "Queens",
   "type": "Feature",
   "geometry": {
-    "name": "Hillside Avenue",
     "coordinates": [
       -73.7032601,
       40.7386417
@@ -44,9 +44,9 @@
   }
 },
 {
+  "name": "Brooklyn",
   "type": "Feature",
   "geometry": {
-    "name": "3 Avenue",
     "coordinates": [
       -74.0259567,
       40.6353674
@@ -55,9 +55,9 @@
   }
 },
 {
+  "name": "Manhattan",
   "type": "Feature",
   "geometry": {
-    "name": "Amsterdam Avenue",
     "coordinates": [
       -73.976112,
       40.786714
