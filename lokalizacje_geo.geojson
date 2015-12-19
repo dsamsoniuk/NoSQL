@@ -9,6 +9,8 @@
     "type": "Point",
     "street": "3 Avenue",
     "building": "6909"
-  }
+  },
+    "properties": {
+    "prop0": "value0"}
 }
 ]}
