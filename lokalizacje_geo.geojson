@@ -1,4 +1,14 @@
 {"type":"FeatureCollection","features":[
-    {"type":"Feature","id":"AGO","properties":{"name":"Angola"},"geometry":{"type":"point","coordinates":[16.326528,-5.87747]}}
-    
+    {"type":"Feature","id":"AGO","properties":{"name":"Angola"},"geometry":{"type":"Point","coordinates":[16.326528,-5.87747]}},
+    {
+  "type": "Feature",
+  "geometry": {
+    "coordinates": [-74.0259567,40.6353674 ],
+    "zipcode": "11209",
+    "type": "Point",
+    "street": "3 Avenue",
+    "building": "6909"
+  },
+  "properties": { "prop0": "value0"}
+}
 ]}
