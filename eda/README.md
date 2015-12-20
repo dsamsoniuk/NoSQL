@@ -64,7 +64,7 @@ time ./pgfutter --db damian --user damian --pw damian12 json wikipedia.json
 
 |  | MongoDB | Postgresql |
 | ---- |:---------:|:----:|
-|Czas trwania importu danych|31m| 35m|
+|Czas trwania importu danych|34m| 31m|
 |Czas zliczenia wierszy| 0s| 9m|
 
 ### Wnioski
