@@ -3,7 +3,7 @@
 
 ## Zad 2a
 
-#### Roczny zbiór danych wpisów z wikipedii (od 21 lipca 2011 do lipca 2012)
+#### Roczny zbiór danych wpisów (ocen) z wikipedii (od 21 lipca 2011 do lipca 2012)
 
 #### [Wikipedia artykuly ](https://datahub.io/dataset/wikipedia-article-ratings)
 
