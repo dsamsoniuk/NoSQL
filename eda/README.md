@@ -37,8 +37,15 @@ time  mongoimport --host 127.0.0.1 -d test -c wiki --type tsv --headerline --fil
 |Waga bazy w różnych formatach|2.77GB|2.8GB|10.4GB|14GB|
 
 
-### Import danych Postgresql
-#### Modyfikacja danych w bazie mongo zmiana wartości w zmiennych z Infinity oraz NaN na 0 lub treść brak. Było to wymagane ponieważ przy imporcie bazy danych do postgresa wyskakiwał błąd znaku.
+## Import danych Postgresql
+#### Przed importem do bazy musiałem zrobić kilka poprawek tzn.
+#### * modyfikacja danych w bazie mongo
+#### * zmiana wartości w zmiennych z Infinity oraz NaN na 0 lub treść brak.
+#### Było to wymagane ponieważ przy imporcie bazy danych do postgresa występowały błąd znaku.
+
+#### Historia procesora
+
+![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s2_g.png?raw=true)
 
 ```js
 db.wiki.update({ $or: [{page_title: Infinity},{page_title: NaN}] },{$set: {page_title: "brak"}},false,true)
@@ -60,6 +67,9 @@ time ./pgfutter --db damian --user damian --pw damian12 json wikipedia.json
 |Czas trwania importu danych|31m| 35m|
 |Czas zliczenia wierszy| 0s| 9m|
 
+### Wnioski
+
+##### Import do bazy danych mongo byl nieco krótszy i latwiejszy natomiast import do postgresa wymagal modyfikacji danych co pochlonelo czas oraz troche dluzszy czas samego importu juz przygotowanej bazy.
 
 ## Zad 2b
 ### Ilość rekordów

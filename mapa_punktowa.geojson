@@ -1,6 +1,6 @@
 {"type":"FeatureCollection","features":[
 {
-  "name": "Brooklyn",
+  "properties": {"name": "Brooklyn"},
   "type": "Feature",
   "geometry": {
     "coordinates": [
@@ -11,7 +11,7 @@
   }
 },
 {
-  "name": "Bronx",
+  "properties": {"name": "Bronx"},
   "type": "Feature",
   "geometry": {
     "coordinates": [
@@ -22,7 +22,7 @@
   }
 },
 {
-  "name": "Brooklyn",
+  "properties": {"name": "Brooklyn"},
   "type": "Feature",
   "geometry": {
     "coordinates": [
@@ -33,7 +33,7 @@
   }
 },
 {
-  "name": "Queens",
+  "properties": {"name": "Queens"},
   "type": "Feature",
   "geometry": {
     "coordinates": [
@@ -44,7 +44,7 @@
   }
 },
 {
-  "name": "Brooklyn",
+  "properties": {"name": "Brooklyn"},
   "type": "Feature",
   "geometry": {
     "coordinates": [
@@ -55,7 +55,7 @@
   }
 },
 {
-  "name": "Manhattan",
+  "properties": {"name": "Manhattan"},
   "type": "Feature",
   "geometry": {
     "coordinates": [
