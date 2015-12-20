@@ -38,14 +38,14 @@ time  mongoimport --host 127.0.0.1 -d test -c wiki --type tsv --headerline --fil
 
 
 ## Import danych Postgresql
-#### Przed importem do bazy musiałem zrobić kilka poprawek tzn.
-#### * modyfikacja danych w bazie mongo
+#### Przed importem do bazy musiałem zrobić kilka poprawek:
+#### * modyfikacja danych w bazie mongo tzn.
 #### * zmiana wartości w zmiennych z Infinity oraz NaN na 0 lub treść brak.
 #### Było to wymagane ponieważ przy imporcie bazy danych do postgresa występowały błąd znaku.
 
 #### Historia procesora
 
-![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/s2_g.png?raw=true)
+![screen1](https://github.com/dsamsoniuk/NoSQL/blob/master/eda/img/postgres-proces.png?raw=true)
 
 ```js
 db.wiki.update({ $or: [{page_title: Infinity},{page_title: NaN}] },{$set: {page_title: "brak"}},false,true)
