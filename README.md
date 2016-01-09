@@ -6,6 +6,10 @@ laboratoria, nosql
 * EDA
 * Geojson
 
+[Egzamin](https://github.com/dsamsoniuk/NoSQL/tree/master/agregacje) :
+
+* Agregacje
+
 | | |
 |---|---|
 |System|linux 14.04 x64|
